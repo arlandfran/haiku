@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import { GeistSans, GeistMono } from "geist/font";
-import "./globals.css";
-import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
+import { GeistMono, GeistSans } from "geist/font";
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Haiku",
@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "bg-background relative flex min-h-screen flex-col font-sans antialiased",
+          "relative flex min-h-screen flex-col bg-background font-sans antialiased",
           GeistSans.variable,
           GeistMono.variable,
         )}
