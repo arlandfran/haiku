@@ -1,9 +1,9 @@
+import SiteHeader from "@/components/site-header";
+
 export default function Home() {
   return (
     <div>
-      <h1 className="scroll-m-20 text-2xl font-semibold tracking-tight">
-        Haiku*
-      </h1>
+      <SiteHeader />
       <p className="leading-7 [&:not(:first-child)]:mt-6">
         *a form of Japanese poetry. A haiku expresses a single feeling or
         impression and contains three unrhymed lines of five, seven, and five

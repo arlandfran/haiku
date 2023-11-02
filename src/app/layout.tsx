@@ -18,12 +18,16 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "font-sans antialiased",
+          "bg-background relative flex min-h-screen flex-col font-sans antialiased",
           GeistSans.variable,
           GeistMono.variable,
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          disableTransitionOnChange
+        >
           {children}
         </ThemeProvider>
       </body>
