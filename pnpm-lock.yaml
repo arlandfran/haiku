@@ -11,6 +11,9 @@ dependencies:
   "@radix-ui/react-icons":
     specifier: ^1.3.0
     version: 1.3.0(react@18.2.0)
+  "@radix-ui/react-label":
+    specifier: ^2.0.2
+    version: 2.0.2(@types/react-dom@18.2.14)(@types/react@18.2.34)(react-dom@18.2.0)(react@18.2.0)
   "@radix-ui/react-slot":
     specifier: ^1.0.2
     version: 1.0.2(@types/react@18.2.34)(react@18.2.0)
@@ -35,6 +38,9 @@ dependencies:
   react-dom:
     specifier: ^18
     version: 18.2.0(react@18.2.0)
+  syllable:
+    specifier: ^5.0.1
+    version: 5.0.1
   tailwind-merge:
     specifier: ^2.0.0
     version: 2.0.0
@@ -44,7 +50,7 @@ dependencies:
 
 devDependencies:
   "@types/node":
-    specifier: ^20
+    specifier: ^20.8.10
     version: 20.8.10
   "@types/react":
     specifier: ^18
@@ -665,6 +671,30 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@radix-ui/react-label@2.0.2(@types/react-dom@18.2.14)(@types/react@18.2.34)(react-dom@18.2.0)(react@18.2.0):
+    resolution:
+      {
+        integrity: sha512-N5ehvlM7qoTLx7nWPodsPYPgMzA5WM8zZChQg8nyFJKnDO5WHdba1vv5/H6IO5LtJMfD2Q3wh1qHFGNtK0w3bQ==,
+      }
+    peerDependencies:
+      "@types/react": "*"
+      "@types/react-dom": "*"
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
+    peerDependenciesMeta:
+      "@types/react":
+        optional: true
+      "@types/react-dom":
+        optional: true
+    dependencies:
+      "@babel/runtime": 7.23.2
+      "@radix-ui/react-primitive": 1.0.3(@types/react-dom@18.2.14)(@types/react@18.2.34)(react-dom@18.2.0)(react@18.2.0)
+      "@types/react": 18.2.34
+      "@types/react-dom": 18.2.14
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /@radix-ui/react-menu@2.0.6(@types/react-dom@18.2.14)(@types/react@18.2.34)(react-dom@18.2.0)(react@18.2.0):
     resolution:
       {
@@ -1008,6 +1038,13 @@ packages:
     dependencies:
       undici-types: 5.26.5
     dev: true
+
+  /@types/pluralize@0.0.29:
+    resolution:
+      {
+        integrity: sha512-BYOID+l2Aco2nBik+iYS4SZX0Lf20KPILP5RGmM1IgzdwNdTs0eebiFriOPcej1sX9mLnSoiNte5zcFxssgpGA==,
+      }
+    dev: false
 
   /@types/prop-types@15.7.9:
     resolution:
@@ -3188,6 +3225,13 @@ packages:
     engines: { node: ">=0.10.0" }
     dev: true
 
+  /normalize-strings@1.1.1:
+    resolution:
+      {
+        integrity: sha512-fARPRdTwmrQDLYhmeh7j/eZwrCP6WzxD6uKOdK/hT/uKACAE9AG2Bc2dgqOZLkfmmctHpfcJ9w3AQnfLgg3GYg==,
+      }
+    dev: false
+
   /object-assign@4.1.1:
     resolution:
       {
@@ -3404,6 +3448,14 @@ packages:
         integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==,
       }
     engines: { node: ">= 6" }
+
+  /pluralize@8.0.0:
+    resolution:
+      {
+        integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==,
+      }
+    engines: { node: ">=4" }
+    dev: false
 
   /postcss-import@15.1.0(postcss@8.4.31):
     resolution:
@@ -4072,6 +4124,18 @@ packages:
         integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==,
       }
     engines: { node: ">= 0.4" }
+
+  /syllable@5.0.1:
+    resolution:
+      {
+        integrity: sha512-HWtNCp6v7J8H0lrT8j1HHjfOLltRoDcC7QRFVu25p4BE52JqetXG65nqC7CsatT8WQRfY4Qvh93BWJIUxbmXFg==,
+      }
+    hasBin: true
+    dependencies:
+      "@types/pluralize": 0.0.29
+      normalize-strings: 1.1.1
+      pluralize: 8.0.0
+    dev: false
 
   /tailwind-merge@2.0.0:
     resolution:

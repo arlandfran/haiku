@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "relative flex min-h-screen flex-col bg-background font-sans antialiased",
+          "bg-background relative flex min-h-screen flex-col font-sans antialiased",
           GeistSans.variable,
           GeistMono.variable,
         )}
