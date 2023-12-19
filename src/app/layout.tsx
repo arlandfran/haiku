@@ -1,3 +1,4 @@
+import { SiteHeader } from "@/components/site-header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import { GeistMono, GeistSans } from "geist/font";
@@ -28,6 +29,7 @@ export default function RootLayout({
           defaultTheme="system"
           disableTransitionOnChange
         >
+          <SiteHeader />
           {children}
         </ThemeProvider>
       </body>
